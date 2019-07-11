@@ -1,13 +1,10 @@
 pipeline {
   agent any
   stages {
-    stage('stage') {
+    stage('Build') {
       steps {
-        echo '"Hello,Mr.Jenkins."'
+        echo 'Hello,Mr.Jenkins.'
       }
     }
-  }
-  environment {
-    name = 'Mr.Jenkins'
   }
 }
